@@ -6,13 +6,13 @@ resource "aws_security_group" "awsproject-elb-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 80
     protocol  = "tcp"
     to_port   = 80
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_security_group" "awsproject-bastion-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 22
@@ -43,7 +43,7 @@ resource "aws_security_group" "awsproject-prod-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 22
@@ -61,7 +61,7 @@ resource "aws_security_group" "awsproject-backend-sg" {
     from_port = 0
     protocol  = "-1"
     to_port   = 0
-    cidr_blocks = [0.0.0.0/0]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
     from_port = 0
