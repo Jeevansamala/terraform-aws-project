@@ -32,10 +32,3 @@ variable "public_key" {
   default = "id_rsa.pub"
 }
 
-variable "access_key" {
-  default = "AKIAXBNB6KNCI2S6IJUJ"
-}
-
-variable "secret_key" {
-  default = "gKkVs04Z5+vAns3vJVB+17lNmzQl9ufeB32ZIzcA"
-}
